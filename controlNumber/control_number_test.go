@@ -1,4 +1,4 @@
-package control_number
+package controlNumber
 
 import (
 	"github.com/stretchr/testify/assert"
