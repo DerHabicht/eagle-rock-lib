@@ -1,5 +1,5 @@
 // TODO: Refactor this to eagle-rock-api/pkg
-package util
+package date
 
 import (
 	"github.com/pkg/errors"
