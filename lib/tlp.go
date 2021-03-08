@@ -1,4 +1,4 @@
-package tlp
+package lib
 
 import (
 	"github.com/pkg/errors"

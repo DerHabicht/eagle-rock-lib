@@ -1,5 +1,5 @@
 // TODO: Write tests
-package controlNumber
+package lib
 
 import (
 	"github.com/pkg/errors"

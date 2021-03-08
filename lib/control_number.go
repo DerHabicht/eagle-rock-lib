@@ -1,4 +1,4 @@
-package controlNumber
+package lib
 
 import (
 	"fmt"
