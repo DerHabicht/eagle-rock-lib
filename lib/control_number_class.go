@@ -9,7 +9,8 @@ import (
 type ControlNumberClass int
 
 const (
-	MR ControlNumberClass = iota + 1
+	RFC ControlNumberClass = iota + 1
+	MR
 	WARNO
 	OPORD
 	FRAGO
@@ -17,6 +18,8 @@ const (
 
 func ParseControlNumberClass(s string) (ControlNumberClass, error) {
 	switch strings.ToLower(s) {
+	case "rfc":
+		return RFC, nil
 	case "mr":
 		return MR, nil
 	case "warno":
@@ -32,6 +35,8 @@ func ParseControlNumberClass(s string) (ControlNumberClass, error) {
 
 func (cnc ControlNumberClass) String() string {
 	switch cnc {
+	case RFC:
+		return "RFC"
 	case MR:
 		return "MR"
 	case WARNO:
