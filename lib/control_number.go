@@ -76,14 +76,14 @@ func (cn ControlNumber) String() string {
 func (cn ControlNumber) PrettyPrint() string {
 	if cn.SubSequence == nil {
 		return fmt.Sprintf(
-			"%s--%02d--%03d",
+			"%s %02d--%03d",
 			cn.Class,
 			cn.Year-2000,
 			cn.MainSequence,
 		)
 	} else {
 		return fmt.Sprintf(
-			"%s--%02d--%03d--%02d",
+			"%s %02d--%03d--%02d",
 			cn.Class,
 			cn.Year-2000,
 			cn.MainSequence,
